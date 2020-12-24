@@ -11,11 +11,14 @@
   margin: 0 auto;
 }
 
+@import 'blocks/title';
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/button';
 @import 'blocks/humburger';
+@import 'blocks/advantages';
 
 @import 'media/promo-m';
 @import 'media/header-m';
 @import 'media/button-m';
+@import 'media/advantages-m';
