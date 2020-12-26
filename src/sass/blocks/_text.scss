@@ -1,0 +1,13 @@
+.text {
+  margin: 0 auto;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.14;
+  text-align: center;
+  color: #2e2e2e;
+  &_white {
+    font-size: 19px;
+    line-height: 1.42;
+    color: #ffffff;
+  }
+}

@@ -1,20 +1,7 @@
 .work {
   padding: 51px 0 57px;
-  hr {
-    border-color: #ec644b;
-    border-width: 1px;
-    border-top: none;
-    width: 148px;
-    margin-top: 20px;
-  }
   &__text {
     max-width: 879px;
-    margin: 17px auto 0;
-    font-size: 21px;
-    font-weight: 300;
-    line-height: 1.14;
-    text-align: center;
-    color: #2e2e2e;
   }
   &__wrapper {
     display: flex;
@@ -23,7 +10,6 @@
     flex-wrap: wrap;
   }
   &__item {
-    //width: 31.58%;
     width: 360px;
     margin: 37px 0 0;
     &:nth-child(2) {

@@ -6,4 +6,9 @@
   text-align: center;
   text-transform: uppercase;
   color: #2e2e2e;
+  line-height: 26px;
+  &_white {
+    text-transform: none;
+    color: #ffffff;
+  }
 }
