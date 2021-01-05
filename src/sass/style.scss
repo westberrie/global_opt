@@ -1,5 +1,6 @@
 @import 'libs/normalize';
 @import 'libs/fonts';
+@import 'libs/slick';
 
 * {
   box-sizing: border-box;
@@ -22,9 +23,18 @@
 @import 'blocks/text';
 @import 'blocks/agent';
 @import 'blocks/prices';
+@import 'blocks/forms';
+@import 'blocks/managers';
+@import 'blocks/schema';
+@import 'blocks/reviews';
+@import 'blocks/questions';
+@import 'blocks/footer';
 
 @import 'media/promo-m';
 @import 'media/header-m';
 @import 'media/button-m';
 @import 'media/advantages-m';
 @import 'media/work-m';
+@import 'media/forms-m';
+@import 'media/reviews-m';
+@import 'media/footer-m';

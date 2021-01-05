@@ -1,0 +1,39 @@
+@media (max-width: 767px) {
+  .footer {
+    &__text {
+      font-size: 13px;
+    }
+    &__contacts {
+      min-width: 137px;
+    }
+    &__phone {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 659px) {
+  .footer {
+    &__head {
+      justify-content: space-between;
+    }
+    &__text {
+      display: none;
+    }
+  }
+}
+@media (max-width: 439px) {
+  .footer {
+    &__contacts {
+      display: none;
+    }
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__politic,
+    &__create {
+      margin-top: 10px;
+    }
+  }
+}

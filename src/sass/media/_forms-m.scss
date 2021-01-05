@@ -1,0 +1,37 @@
+@media (max-width: 767px) {
+  .form-cons__wrapper-elem {
+    width: 274px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 881px) {
+  .form-ques {
+    textarea {
+      width: 548px;
+    }
+  }
+}
+@media (max-width: 607px) {
+  .form-ques {
+    &__wrapper {
+      textarea {
+        width: 268px;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .form-ques {
+    &__wrapper {
+      textarea {
+        max-width: 268px;
+        min-width: 268px;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}

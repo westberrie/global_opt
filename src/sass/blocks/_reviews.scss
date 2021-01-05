@@ -1,0 +1,60 @@
+.reviews {
+  padding: 51px 0 65px;
+  &__line {
+    margin-top: 25px;
+  }
+  &__text {
+    //padding: 0 15px;
+    margin: 0 auto;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.14;
+    text-align: center;
+    color: #2e2e2e;
+  }
+  &__slider {
+    margin: 31px auto 0;
+  }
+  &__item {
+    width: 601px;
+    margin: 0 auto;
+  }
+  &__avatar {
+    display: block;
+    margin: 0 auto;
+  }
+  &__descr {
+    margin-top: 19px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.57;
+    text-align: justify;
+    text-align-last: center;
+    color: #3a3a3a;
+    span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .slick-slide {
+    outline: none;
+  }
+  .slick-arrow {
+    padding: 0;
+    width: 15px;
+    height: 47px;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 34px;
+  }
+  .slick-prev {
+    left: calc(50% - 15px - 57px - 38px); //582px;
+  }
+  .slick-next {
+    left: calc(50% + 57px + 38px); //801px;
+  }
+}

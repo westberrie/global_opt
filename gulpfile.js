@@ -46,7 +46,7 @@ gulp.task('styles', function () {
 gulp.task('scripts', function () {
   return gulp
     .src('src/js/script.js')
-    .pipe(rename('script.min.js'))
+    .pipe(rename('script.js'))
     .pipe(terser())
     .pipe(gulp.dest('docs/js'));
 });
@@ -79,13 +79,26 @@ gulp.task('images', function () {
   return gulp.src('src/img/**/*').pipe(imagemin()).pipe(gulp.dest('docs/img'));
 });
 
+gulp.task('mailer', function () {
+  return gulp.src('src/mailer/**/*').pipe(gulp.dest('docs/mailer'));
+});
+
 gulp.task('watch', () => {
   gulp.watch('src/sass/**/*.+(scss|sass|css)', gulp.parallel('to-css'));
 });
 
-gulp.task('default', gulp.parallel('watch', 'server'));
+gulp.task('default', gulp.parallel('watch', 'server', 'to-css'));
 
 gulp.task(
   'build',
-  gulp.parallel('html', 'styles', 'scripts', 'libs', 'fonts', 'icons', 'images')
+  gulp.parallel(
+    'html',
+    'styles',
+    'scripts',
+    'libs',
+    'fonts',
+    'icons',
+    'images',
+    'mailer'
+  )
 );

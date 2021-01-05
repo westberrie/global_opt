@@ -6,18 +6,19 @@
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Global Opt</title>
   </head>
+
   <body>
     <section class="promo">
       <div class="container">
         <div class="header">
           <img src="icons/logo.png" alt="logo" class="header__logo" />
           <nav class="header__navigation">
-            <a href="#">Преимущества</a>
-            <a href="#">Наша работа</a>
-            <a href="#">Цены</a>
-            <a href="#">Схема работы</a>
-            <a href="#">Отзывы</a>
-            <a href="#">Контакты</a>
+            <a href="#advantages">Преимущества</a>
+            <a href="#work">Наша работа</a>
+            <a href="#prices">Цены</a>
+            <a href="#schema">Схема работы</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#map">Контакты</a>
           </nav>
           <div class="header__contacts">
             <div>Есть вопросы?</div>
@@ -96,9 +97,9 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="container">
-        <h2 class="title">Цены на любой вариант доставки</h2>
+        <h2 class="title">Преимущества работы с GlobalOpt</h2>
         <div class="advantages__wrapper">
           <div class="advantages__row">
             <div class="advantages__column">
@@ -199,7 +200,7 @@
       </div>
     </section>
 
-    <section class="work">
+    <section class="work" id="work">
       <div class="container">
         <h2 class="title">Наша работа - больше чем просто доставка</h2>
         <hr class="line" />
@@ -255,7 +256,7 @@
       </div>
     </section>
 
-    <section class="prices">
+    <section class="prices" id="prices">
       <div class="container">
         <h2 class="title">Цены на любой вариант доставки</h2>
         <hr class="line" />
@@ -263,6 +264,7 @@
           Перевозки грузов на дальние расстояния без каких-либо ограничений.
           Любой груз доставим вовремя.
         </div>
+
         <div class="prices__wrapper">
           <div class="prices__item">
             <div class="prices__item-head">Доставка морем</div>
@@ -321,8 +323,259 @@
             </button>
           </div>
         </div>
+
+        <p>Заказать бесплатную консультацию</p>
+
+        <form action="#" method="POST" class="form form-cons">
+          <div class="form-cons__wrapper-logo">
+            <div class="form-cons__circle">
+              <img
+                src="icons/consultation.png"
+                alt="icon"
+                class="form-cons__logo"
+              />
+            </div>
+          </div>
+          <div class="form-cons__wrapper-elem">
+            <div>
+              <input name="name" placeholder="Ваше имя..." type="text" />
+            </div>
+            <div>
+              <input name="phone" placeholder="Ваш номер телефона..." />
+            </div>
+            <div>
+              <input name="email" placeholder="Ваш e-mail..." type="email" />
+            </div>
+          </div>
+          <div class="form-cons__wrapper-button">
+            <button class="button button_form">Отправить заявку</button>
+          </div>
+        </form>
       </div>
     </section>
+
+    <section class="managers">
+      <div class="container">
+        <div class="managers__circle">
+          <img src="icons/managers.png" alt="icon" />
+        </div>
+        <h2 class="managers__title title title_white">Менеджеры компании</h2>
+        <div class="managers__text">
+          Подберут для Вас оптимальную схему грузоперевозки. Проведут контроль
+          закупок, организуют прямые поставки от завода-изготовителя.
+        </div>
+      </div>
+    </section>
+
+    <section class="schema" id="schema">
+      <div class="container">
+        <div class="title">Схема работы с нами</div>
+        <div class="schema__wrapper">
+          <div class="schema__item">
+            <div class="schema__icon">
+              <img src="icons/schema/01.png" alt="icon" />
+            </div>
+            <div class="schema__descr">
+              <span>Заявка</span><br />
+              Вы оставляете заявку на нашем сайте или звоните нам
+            </div>
+          </div>
+          <div class="schema__item">
+            <div class="schema__icon">
+              <img src="icons/schema/02.png" alt="icon" />
+            </div>
+            <div class="schema__descr">
+              <span>Аналитика доставки</span><br />
+              Мы просчитываем варианты доставки Вашего груза
+            </div>
+          </div>
+          <div class="schema__item">
+            <div class="schema__icon">
+              <img src="icons/schema/03.png" alt="icon" />
+            </div>
+            <div class="schema__descr">
+              <span>Договор</span><br />
+              Заключаем с Вами договор о поставке груза из Китая
+            </div>
+          </div>
+          <div class="schema__item">
+            <div class="schema__icon">
+              <img src="icons/schema/04.png" alt="icon" />
+            </div>
+            <div class="schema__descr">
+              <span>Доставка на наш склад</span><br />
+              Связываемся с Вашим поставщиком в Китае и договариваемся о
+              доставке груза на наш склад
+            </div>
+          </div>
+          <div class="schema__item">
+            <div class="schema__icon">
+              <img src="icons/schema/05.png" alt="icon" />
+            </div>
+            <div class="schema__descr">
+              <span>Проверка груза</span><br />
+              Мы проверяем, собираем и упаковываем перед отправкой Ваш груз на
+              своём складе
+            </div>
+          </div>
+          <div class="schema__item">
+            <div class="schema__icon">
+              <img src="icons/schema/06.png" alt="icon" />
+            </div>
+            <div class="schema__descr">
+              <span>Доставка груза</span><br />
+              Мы перевозим ваш груз до места назначения и производим таможенную
+              очистку
+            </div>
+          </div>
+          <div class="schema__item">
+            <div class="schema__icon">
+              <img src="icons/schema/07.png" alt="icon" />
+            </div>
+            <div class="schema__descr">
+              <span>Оплата</span><br />
+              Оплачиваете доставку груза при получении
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <h2 class="title">отзывы наших клиентов</h2>
+      <hr class="reviews__line line" />
+      <div class="reviews__text">
+        Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова
+      </div>
+      <div class="reviews__slider">
+        <div>
+          <div class="reviews__item">
+            <img src="icons/photo.png" alt="img" class="reviews__avatar" />
+            <div class="reviews__descr">
+              <span>Анисимова Ольга</span><br />
+              Хочу рассказать о компании Global Opt. Самое главное что меня
+              радует, это быстрый поиск и анализ определенного товара.
+              Доставляла через компанию уже много раз, от расходных материалов
+              для отеля, ло дольших партий детской одежды. Буду продолжать
+              пользтваьбся услугами даной компании
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="reviews__item">
+            <img src="icons/photo.png" alt="img" class="reviews__avatar" />
+            <div class="reviews__descr">
+              <span>Анисимова Ольга</span><br />
+              Хочу рассказать о компании Global Opt. Самое главное что меня
+              радует, это быстрый поиск и анализ определенного товара.
+              Доставляла через компанию уже много раз, от расходных материалов
+              для отеля, ло дольших партий детской одежды. Буду продолжать
+              пользтваьбся услугами даной компании
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="reviews__item">
+            <img src="icons/photo.png" alt="img" class="reviews__avatar" />
+            <div class="reviews__descr">
+              <span>Анисимова Ольга</span><br />
+              Хочу рассказать о компании Global Opt. Самое главное что меня
+              радует, это быстрый поиск и анализ определенного товара.
+              Доставляла через компанию уже много раз, от расходных материалов
+              для отеля, ло дольших партий детской одежды. Буду продолжать
+              пользтваьбся услугами даной компании
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="reviews__item">
+            <img src="icons/photo.png" alt="img" class="reviews__avatar" />
+            <div class="reviews__descr">
+              <span>Анисимова Ольга</span><br />
+              Хочу рассказать о компании Global Opt. Самое главное что меня
+              радует, это быстрый поиск и анализ определенного товара.
+              Доставляла через компанию уже много раз, от расходных материалов
+              для отеля, ло дольших партий детской одежды. Буду продолжать
+              пользтваьбся услугами даной компании
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions">
+      <div class="container">
+        <div class="questions__header">
+          <h2 class="questions__title">Остались вопросы?</h2>
+          <div class="questions__subtitle">Напишите нам!</div>
+        </div>
+        <form action="#" method="POST" class="form form-ques">
+          <div class="form form-ques__wrapper">
+            <div>
+              <input name="name" placeholder="Ваше имя..." type="text" />
+            </div>
+            <div>
+              <input name="phone" placeholder="Ваш номер телефона..." />
+            </div>
+            <div>
+              <input name="email" placeholder="Ваш e-mail..." type="email" />
+            </div>
+            <textarea name="message" placeholder="Сообщение..."></textarea>
+          </div>
+          <button class="form-ques__button button button_form">
+            Отправить заявку
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="map" id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9396.563432058534!2d37.62522153793051!3d55.747197549090174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x45d8b81f41916c35!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINCc0L7RgdC60LLQsCwgMTE1MDM1!5e0!3m2!1sru!2sru!4v1609851719124!5m2!1sru!2sru"
+        width="100%"
+        height="500px"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__head">
+          <img src="icons/logo.png" alt="logo" class="footer__logo" />
+          <div class="footer__text">
+            Global Opt - Доставка грузов из Китая в Россию и СНГ
+          </div>
+          <div class="footer__contacts">
+            <div>Есть вопросы?</div>
+            <a href="tel:+79264230100" class="footer__phone"
+              >+7 (926) 423 01 00</a
+            >
+          </div>
+          <button class="button button_small">Перезвоните мне</button>
+        </div>
+        <hr />
+        <div class="footer__wrapper">
+          <div class="footer__site">© 2010 Scratch.com.ua</div>
+          <div class="footer__politic">Политика конфидециальности</div>
+          <div class="footer__create">
+            <div>Создание сайта:</div>
+            <img src="icons/logo_footer.png" alt="logo" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/libs/jquery.validate.min.js"></script>
+    <script src="js/libs/jquery.maskedinput.min.js"></script>
+    <script src="js/libs/slick.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

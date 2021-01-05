@@ -1,0 +1,27 @@
+.managers {
+  padding: 58px 0 60px;
+  min-height: 342px;
+  background: url('../img/bg/bg_managers.jpg') center center / cover no-repeat;
+  &__circle {
+    margin: 0 auto;
+    width: 102px;
+    height: 102px;
+    border-radius: 100%;
+    border: solid 1px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    margin-top: 20px;
+  }
+  &__text {
+    max-width: 923px;
+    margin: 18px auto 0;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.42;
+    text-align: center;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,119 @@
+.form {
+  input,
+  textarea {
+    border: solid 1px rgba(0, 0, 0, 0.21);
+    background-color: #ffffff;
+    margin-top: 8px;
+    padding: 0 28px;
+    font-size: 13px;
+    outline: none;
+  }
+  input {
+    width: 268px;
+    height: 45px;
+    border-radius: 23px;
+  }
+  &-cons {
+    margin-top: 71px;
+    min-height: 166px;
+    border: solid 1px rgba(0, 0, 0, 0.21);
+    border-right-color: rgba(0, 0, 0, 0.5);
+    border-left-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    &__wrapper {
+      &-elem {
+        max-width: 862px;
+        padding: 0 20px;
+        margin: 60px auto 53px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        div {
+          width: 268px;
+          margin: 0 3px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+      &-logo {
+        position: absolute;
+        top: -61px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 122px;
+        height: 122px;
+        border-radius: 100%;
+        background-color: #fff;
+      }
+      &-button {
+        margin-top: 10px;
+        width: 200px;
+        height: 45px;
+        background-color: #fff;
+        position: absolute;
+        bottom: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &__circle {
+      width: 102px;
+      height: 102px;
+      margin: 10px auto;
+      border: solid 1px #e93b3b;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &-ques {
+    margin: 0 auto;
+    max-width: 896px;
+    min-height: 229px;
+    padding: 10px 15px 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      div {
+        width: 268px;
+        margin: 0 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      textarea {
+        padding-top: 18px;
+        width: 813px;
+        height: 71px;
+        border-radius: 8px;
+        resize: none;
+      }
+    }
+    &__button {
+      display: block;
+      margin: 17px auto 0;
+    }
+  }
+  .error {
+    border: 1px solid red;
+    text-align: center;
+  }
+  label.error {
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.57;
+    text-align: center;
+    color: #ec644b;
+  }
+}

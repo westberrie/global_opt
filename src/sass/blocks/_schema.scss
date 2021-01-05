@@ -1,0 +1,37 @@
+.schema {
+  min-height: 454px;
+  padding: 51px 0 46px;
+  background-color: #f3f3f3;
+  &__wrapper {
+    margin-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__item {
+    width: 258px;
+    margin: 26px 13px 0;
+  }
+  &__icon {
+    margin: 0 auto;
+    width: 61px;
+    height: 54px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__descr {
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.43;
+    text-align: center;
+    color: #3a3a3a;
+    span {
+      font-size: 16px;
+      font-weight: bold;
+      color: #ec644b;
+    }
+  }
+}
